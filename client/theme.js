@@ -7,14 +7,14 @@ const theme = createMuiTheme({
     },
     palette: {
       primary: {
-      light: '#5c67a3', //RGU light purple
+      light: '#955999', //RGU light purple
       main: '#86428b', //RGU purple
       dark: '#712177', //RGU purple dark
       contrastText: '#fff',
     },
     secondary: {
       light: '#ff79b0',
-      main: '#ff4081',
+      main: '#ffffff',
       dark: '#c60055',
       contrastText: '#000',
     },

@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: '#ededed',
     borderBottom: '1px solid #d0d0d0',
     '& a':{
-      color: '#712177'
+      color: '#712177' //RGU purple
     } 
   }
 }))
@@ -51,4 +51,3 @@ export default function Home(){
         </Card>
     )
 }
-
