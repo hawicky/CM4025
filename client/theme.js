@@ -7,9 +7,9 @@ const theme = createMuiTheme({
     },
     palette: {
       primary: {
-      light: '#5c67a3',
-      main: '#3f4771',
-      dark: '#2e355b',
+      light: '#5c67a3', //RGU light purple
+      main: '#86428b', //RGU purple
+      dark: '#712177', //RGU purple dark
       contrastText: '#fff',
     },
     secondary: {
@@ -18,7 +18,7 @@ const theme = createMuiTheme({
       dark: '#c60055',
       contrastText: '#000',
     },
-      openTitle: '#3f4771',
+      openTitle: '#712177',
       protectedTitle: pink['400'],
       type: 'light'
     }
