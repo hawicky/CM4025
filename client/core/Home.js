@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: '#ededed',
     borderBottom: '1px solid #d0d0d0',
     '& a':{
-      color: '#3f4771'
+      color: '#712177'
     } 
   }
 }))
@@ -44,7 +44,7 @@ export default function Home(){
           <Typography variant="body2" component="p" className={classes.credit} color="textSecondary"> Image by Picasso </Typography>
           <CardContent>
             <Typography variant="body1" component="p">
-              Welcome to Lab Six.
+              Welcome to the A/B testing website
             <Link to="/users"> Users </Link>
             </Typography>
           </CardContent>
