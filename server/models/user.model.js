@@ -1,8 +1,6 @@
 import mongoose from 'mongoose'
 import crypto from 'crypto'
 
-
-
 const UserSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -29,16 +27,20 @@ const UserSchema = new mongoose.Schema({
   about: {
     type: String,
     trim: true,
-  },
+    enum: {
+      values: ['Android', 'Apple'],
+      message: "Please enter either 'Android' or 'Apple' (Case Sensitive)"
+    }
+},
   profileclicks: {
-    type: Number,
-    default: 0,
-    min: 0
-  },
+  type: Number,
+  default: 0,
+  min: 0
+},
   admin: {
-    type: Boolean,
-    default: false
-  }
+  type: Boolean,
+  default: false
+}
 })
 
 UserSchema

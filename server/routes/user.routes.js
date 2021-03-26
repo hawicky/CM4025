@@ -14,7 +14,7 @@ router.route('/api/users/:userId')
   .delete(authCtrl.requireSignin, authCtrl.hasAuthorization, userCtrl.remove)
 
 router.route('/api/users/admin/:userId')
-  .get(authCtrl.requireSignin, authCtrl.hasAdminAuthorization, userCtrl.list)
+  .get(authCtrl.requireSignin, authCtrl.hasAdminAuthorization, userCtrl.listadmin)
 
 
 router.param('userId', userCtrl.userByID)

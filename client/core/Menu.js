@@ -54,6 +54,13 @@ const Menu = withRouter(({ history }) => (
           }}>Sign out</Button>
         </span>)
       }
+      {
+        auth.isAuthenticated() && (<span>
+          <Link to={"/useradmin/" + auth.isAuthenticated().user._id}>
+            <Button style={isActive(history, "/useradmin/" + auth.isAuthenticated().user._id)}>Admin Dashboard</Button>
+          </Link>
+        </span>)
+      }
     </Toolbar>
   </AppBar>
 ))

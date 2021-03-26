@@ -36,40 +36,112 @@ const useStyles = makeStyles(theme => ({
 export default function Shop() {
   const classes = useStyles()
   return (
-    <Box display="flex" flexDirection="row">
-      <Card className={classes.card}>
-        <Typography variant="h6" className={classes.title}>
-          Welcome to the A/B Mobiles store!
+    <>
+      <Box display="flex" flexDirection="row">
+        <Card className={classes.card}>
+          <Typography variant="h6" className={classes.title}>
+            Welcome to the A/B Mobiles store!
           </Typography>
-        <CardMedia className={classes.media} image={myImg} title="My Image" />
-        <CardContent>
-          <Typography variant="body1" component="p">
-            <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
+          <CardMedia className={classes.media} image={myImg} title="My Image" />
+          <CardContent>
+            <Typography variant="body1" component="p">
+              <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card className={classes.card}>
+          <Typography variant="h6" className={classes.title}>
+            Welcome to the A/B Mobiles store!
           </Typography>
-        </CardContent>
-      </Card>
-      <Card className={classes.card}>
-        <Typography variant="h6" className={classes.title}>
-          Welcome to the A/B Mobiles store!
+          <CardMedia className={classes.media} image={myImg} title="My Image" />
+          <CardContent>
+            <Typography variant="body1" component="p">
+              <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card className={classes.card}>
+          <Typography variant="h6" className={classes.title}>
+            Welcome to the A/B Mobiles store!
           </Typography>
-        <CardMedia className={classes.media} image={myImg} title="My Image" />
-        <CardContent>
-          <Typography variant="body1" component="p">
-            <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
-          </Typography>
-        </CardContent>
-      </Card>
-      <Card className={classes.card}>
-        <Typography variant="h6" className={classes.title}>
-          Welcome to the A/B Mobiles store!
-          </Typography>
-        <CardMedia className={classes.media} image={myImg} title="My Image" />
-        <CardContent>
-          <Typography variant="body1" component="p">
-            <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
-          </Typography>
-        </CardContent>
-      </Card>
-    </Box>
+          <CardMedia className={classes.media} image={myImg} title="My Image" />
+          <CardContent>
+            <Typography variant="body1" component="p">
+              <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
+            </Typography>
+          </CardContent>
+        </Card>
+      </Box>
+      <Box display="flex" flexDirection="row">
+        <Card className={classes.card}>
+          <Typography variant="h6" className={classes.title}>
+            Welcome to the A/B Mobiles store!
+        </Typography>
+          <CardMedia className={classes.media} image={myImg} title="My Image" />
+          <CardContent>
+            <Typography variant="body1" component="p">
+              <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card className={classes.card}>
+          <Typography variant="h6" className={classes.title}>
+            Welcome to the A/B Mobiles store!
+        </Typography>
+          <CardMedia className={classes.media} image={myImg} title="My Image" />
+          <CardContent>
+            <Typography variant="body1" component="p">
+              <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card className={classes.card}>
+          <Typography variant="h6" className={classes.title}>
+            Welcome to the A/B Mobiles store!
+        </Typography>
+          <CardMedia className={classes.media} image={myImg} title="My Image" />
+          <CardContent>
+            <Typography variant="body1" component="p">
+              <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
+            </Typography>
+          </CardContent>
+        </Card>
+      </Box>
+      <Box display="flex" flexDirection="row">
+        <Card className={classes.card}>
+          <Typography variant="h6" className={classes.title}>
+            Welcome to the A/B Mobiles store!
+      </Typography>
+          <CardMedia className={classes.media} image={myImg} title="My Image" />
+          <CardContent>
+            <Typography variant="body1" component="p">
+              <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card className={classes.card}>
+          <Typography variant="h6" className={classes.title}>
+            Welcome to the A/B Mobiles store!
+      </Typography>
+          <CardMedia className={classes.media} image={myImg} title="My Image" />
+          <CardContent>
+            <Typography variant="body1" component="p">
+              <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card className={classes.card}>
+          <Typography variant="h6" className={classes.title}>
+            Welcome to the A/B Mobiles store!
+      </Typography>
+          <CardMedia className={classes.media} image={myImg} title="My Image" />
+          <CardContent>
+            <Typography variant="body1" component="p">
+              <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
+            </Typography>
+          </CardContent>
+        </Card>
+      </Box>
+    </>
   )
 }
