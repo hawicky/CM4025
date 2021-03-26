@@ -4,9 +4,17 @@ import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
 import Typography from '@material-ui/core/Typography'
-import myImg from './../assets/images/myimage.png'
+import iPhone11Pro from './../assets/images/iPhone11Pro.png'
+import iPhoneX from './../assets/images/iPhoneX.png'
+import iPhoneXR from './../assets/images/iPhoneXR.png'
+import samsungNote from './../assets/images/samsungNote.png'
+import samsungS20 from './../assets/images/samsungS20.png'
+import huaweiNova3i from './../assets/images/huaweiNova3i.png'
+import oneplus9pro from './../assets/images/oneplus9pro.png'
+import pixel5 from './../assets/images/pixel5.png'
+import nokia3310 from './../assets/images/nokia3310.png'
 import { Link } from 'react-router-dom'
-import Box from '@material-ui/core/Box';
+import Box from '@material-ui/core/Box'
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -40,9 +48,9 @@ export default function Shop() {
       <Box display="flex" flexDirection="row">
         <Card className={classes.card}>
           <Typography variant="h6" className={classes.title}>
-            Welcome to the A/B Mobiles store!
+            iPhone 11 Pro
           </Typography>
-          <CardMedia className={classes.media} image={myImg} title="My Image" />
+          <CardMedia className={classes.media} image={iPhone11Pro} title="iPhone 11 Pro" />
           <CardContent>
             <Typography variant="body1" component="p">
               <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
@@ -51,9 +59,9 @@ export default function Shop() {
         </Card>
         <Card className={classes.card}>
           <Typography variant="h6" className={classes.title}>
-            Welcome to the A/B Mobiles store!
+            iPhone X
           </Typography>
-          <CardMedia className={classes.media} image={myImg} title="My Image" />
+          <CardMedia className={classes.media} image={iPhoneX} title="iPhone X" />
           <CardContent>
             <Typography variant="body1" component="p">
               <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
@@ -62,9 +70,9 @@ export default function Shop() {
         </Card>
         <Card className={classes.card}>
           <Typography variant="h6" className={classes.title}>
-            Welcome to the A/B Mobiles store!
+            iPhone XR
           </Typography>
-          <CardMedia className={classes.media} image={myImg} title="My Image" />
+          <CardMedia className={classes.media} image={iPhoneXR} title="iPhone XR" />
           <CardContent>
             <Typography variant="body1" component="p">
               <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
@@ -75,9 +83,9 @@ export default function Shop() {
       <Box display="flex" flexDirection="row">
         <Card className={classes.card}>
           <Typography variant="h6" className={classes.title}>
-            Welcome to the A/B Mobiles store!
+            Oneplus 9 Pro
         </Typography>
-          <CardMedia className={classes.media} image={myImg} title="My Image" />
+          <CardMedia className={classes.media} image={oneplus9pro} title="Oneplus 9 pro" />
           <CardContent>
             <Typography variant="body1" component="p">
               <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
@@ -86,9 +94,9 @@ export default function Shop() {
         </Card>
         <Card className={classes.card}>
           <Typography variant="h6" className={classes.title}>
-            Welcome to the A/B Mobiles store!
+            Google Pixel 5
         </Typography>
-          <CardMedia className={classes.media} image={myImg} title="My Image" />
+          <CardMedia className={classes.media} image={pixel5} title="Google Pixel 5" />
           <CardContent>
             <Typography variant="body1" component="p">
               <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
@@ -97,9 +105,9 @@ export default function Shop() {
         </Card>
         <Card className={classes.card}>
           <Typography variant="h6" className={classes.title}>
-            Welcome to the A/B Mobiles store!
+            Samsung Galaxy Note
         </Typography>
-          <CardMedia className={classes.media} image={myImg} title="My Image" />
+          <CardMedia className={classes.media} image={samsungNote} title="Samsung Galaxy Note" />
           <CardContent>
             <Typography variant="body1" component="p">
               <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
@@ -110,9 +118,9 @@ export default function Shop() {
       <Box display="flex" flexDirection="row">
         <Card className={classes.card}>
           <Typography variant="h6" className={classes.title}>
-            Welcome to the A/B Mobiles store!
+            Samsung S20
       </Typography>
-          <CardMedia className={classes.media} image={myImg} title="My Image" />
+          <CardMedia className={classes.media} image={samsungS20} title="Samsung S20" />
           <CardContent>
             <Typography variant="body1" component="p">
               <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
@@ -121,9 +129,9 @@ export default function Shop() {
         </Card>
         <Card className={classes.card}>
           <Typography variant="h6" className={classes.title}>
-            Welcome to the A/B Mobiles store!
+            Huawei Nova 3i
       </Typography>
-          <CardMedia className={classes.media} image={myImg} title="My Image" />
+          <CardMedia className={classes.media} image={huaweiNova3i} title="Huawei Nova 3i" />
           <CardContent>
             <Typography variant="body1" component="p">
               <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
@@ -132,9 +140,9 @@ export default function Shop() {
         </Card>
         <Card className={classes.card}>
           <Typography variant="h6" className={classes.title}>
-            Welcome to the A/B Mobiles store!
+            Nokia 3310
       </Typography>
-          <CardMedia className={classes.media} image={myImg} title="My Image" />
+          <CardMedia className={classes.media} image={nokia3310} title="Nokia 3310" />
           <CardContent>
             <Typography variant="body1" component="p">
               <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>

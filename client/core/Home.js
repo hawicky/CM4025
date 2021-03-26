@@ -5,7 +5,10 @@ import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
 import Typography from '@material-ui/core/Typography'
 import myImg from './../assets/images/myimage.png'
-import {Link} from 'react-router-dom'
+import android from './../assets/images/android-main.png'
+import apple from './../assets/images/apple-main.png'
+import { Link } from 'react-router-dom'
+import Box from '@material-ui/core/Box'
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -15,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     marginBottom: theme.spacing(5)
   },
   title: {
-    padding:`${theme.spacing(3)}px ${theme.spacing(2.5)}px ${theme.spacing(2)}px`,
+    padding: `${theme.spacing(3)}px ${theme.spacing(2.5)}px ${theme.spacing(2)}px`,
     color: theme.palette.openTitle
   },
   media: {
@@ -26,7 +29,7 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'right',
     backgroundColor: '#ededed',
     borderBottom: '1px solid #d0d0d0',
-    '& a':{
+    '& a': {
       color: '#712177' //RGU purple
     }
   }
@@ -34,22 +37,32 @@ const useStyles = makeStyles(theme => ({
 
 
 
-export default function Home(){
+export default function Home() {
   const classes = useStyles()
-    return (
-        <Card className={classes.card}>
-          <Typography variant="h6" className={classes.title}>
-            Home Page
-          
+  return (
+    <Box display="flex" flexDirection="row" className={classes.box}>
+      <Card className={classes.card}>
+        <Typography variant="h6" className={classes.title}>
+          Welcome to the A/B Mobiles store!
           </Typography>
-          <CardMedia className={classes.media} image={myImg} title="My Image"/>
-          <Typography variant="body2" component="p" className={classes.credit} color="textSecondary"> Image by Picasso </Typography>
-          <CardContent>
-            <Typography variant="body1" component="p">
-              Welcome to A/B mobiles! <br/>
-            <Link to="/users"> Users </Link>
-            </Typography>
-          </CardContent>
-        </Card>
-    )
+        <CardMedia className={classes.media} image={android} title="Android Phone" />
+        <CardContent>
+          <Typography variant="body1" component="p">
+            <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
+          </Typography>
+        </CardContent>
+      </Card>
+      <Card className={classes.card}>
+        <Typography variant="h6" className={classes.title}>
+          Welcome to the A/B Mobiles store!
+          </Typography>
+        <CardMedia className={classes.media} image={apple} title="Apple iPhone" />
+        <CardContent>
+          <Typography variant="body1" component="p">
+            <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
+          </Typography>
+        </CardContent>
+      </Card>
+    </Box>
+  )
 }
