@@ -43,23 +43,23 @@ export default function Home() {
     <Box display="flex" flexDirection="row" className={classes.box}>
       <Card className={classes.card}>
         <Typography variant="h6" className={classes.title}>
-          Welcome to the A/B Mobiles store!
+          Will you join the freedom of the Android Army?
           </Typography>
         <CardMedia className={classes.media} image={android} title="Android Phone" />
         <CardContent>
           <Typography variant="body1" component="p">
-            <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
+          Make Android your favourite by entering 'Android' into your profile!
           </Typography>
         </CardContent>
       </Card>
       <Card className={classes.card}>
         <Typography variant="h6" className={classes.title}>
-          Welcome to the A/B Mobiles store!
+          Or can you resist the immersive Apple Ecosystem?
           </Typography>
         <CardMedia className={classes.media} image={apple} title="Apple iPhone" />
         <CardContent>
           <Typography variant="body1" component="p">
-            <Link to="/"> Click here to go back to the A/B Mobiles home page </Link>
+            Make Apple your favourite by entering 'Apple' into your profile!
           </Typography>
         </CardContent>
       </Card>
