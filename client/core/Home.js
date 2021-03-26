@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
@@ -9,6 +9,7 @@ import android from './../assets/images/android-main.png'
 import apple from './../assets/images/apple-main.png'
 import { Link } from 'react-router-dom'
 import Box from '@material-ui/core/Box'
+import { joke } from '../thirdparty/api-dadjokes.js'
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -32,6 +33,11 @@ const useStyles = makeStyles(theme => ({
     '& a': {
       color: '#712177' //RGU purple
     }
+  },
+  joke: {
+    textAlign: 'center',
+    marginTop: 20,
+    fontStyle: 'italic'
   }
 }))
 
@@ -39,30 +45,64 @@ const useStyles = makeStyles(theme => ({
 
 export default function Home() {
   const classes = useStyles()
+  const [jokes, setJokes] = useState({
+    joke: 'No joke',
+    error: ''
+  })
+  useEffect(() => {
+    const abortController = new AbortController()
+    const signal = abortController.signal
+
+    joke(signal).then((data) => {
+      if (data && data.error) {
+        console.log("error in getting jokes")
+        console.log(data.error)
+        //setJokes(...jokes, error: data.error)
+      } else {
+        console.log("Here is the user data")
+        console.log(data)
+        if (data != undefined) {
+          console.log("setting the data")
+          setJokes(data)
+        }
+      }
+    })
+
+    return function cleanup() {
+      abortController.abort()
+    }
+  }, [])
+
+
+
   return (
-    <Box display="flex" flexDirection="row" className={classes.box}>
-      <Card className={classes.card}>
-        <Typography variant="h6" className={classes.title}>
-          Will you join the freedom of the Android Army?
+    <>
+    
+      <Box display="flex" flexDirection="row" className={classes.box}>
+        <Card className={classes.card}>
+          <Typography variant="h6" className={classes.title}>
+            Will you join the freedom of the Android Army?
           </Typography>
-        <CardMedia className={classes.media} image={android} title="Android Phone" />
-        <CardContent>
-          <Typography variant="body1" component="p">
-          Make Android your favourite by entering 'Android' into your profile!
+          <CardMedia className={classes.media} image={android} title="Android Phone" />
+          <CardContent>
+            <Typography variant="body1" component="p">
+              Make Android your favourite by entering 'Android' into your profile!
           </Typography>
-        </CardContent>
-      </Card>
-      <Card className={classes.card}>
-        <Typography variant="h6" className={classes.title}>
-          Or can you resist the immersive Apple Ecosystem?
+          </CardContent>
+        </Card>
+        <Card className={classes.card}>
+          <Typography variant="h6" className={classes.title}>
+            Or can you resist the immersive Apple Ecosystem?
           </Typography>
-        <CardMedia className={classes.media} image={apple} title="Apple iPhone" />
-        <CardContent>
-          <Typography variant="body1" component="p">
-            Make Apple your favourite by entering 'Apple' into your profile!
+          <CardMedia className={classes.media} image={apple} title="Apple iPhone" />
+          <CardContent>
+            <Typography variant="body1" component="p">
+              Make Apple your favourite by entering 'Apple' into your profile!
           </Typography>
-        </CardContent>
-      </Card>
-    </Box>
+          </CardContent>
+        </Card>
+      </Box>
+      <Typography variant="h6" className={classes.joke}> Feeling low? Here's a joke that might cheer you up🙂: {jokes.joke} </Typography>
+    </>
   )
 }
