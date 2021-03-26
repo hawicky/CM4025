@@ -28,9 +28,11 @@ const useStyles = makeStyles(theme => ({
     borderBottom: '1px solid #d0d0d0',
     '& a':{
       color: '#712177' //RGU purple
-    } 
+    }
   }
 }))
+
+
 
 export default function Home(){
   const classes = useStyles()
@@ -44,7 +46,7 @@ export default function Home(){
           <Typography variant="body2" component="p" className={classes.credit} color="textSecondary"> Image by Picasso </Typography>
           <CardContent>
             <Typography variant="body1" component="p">
-              Welcome to the A/B testing website
+              Welcome to A/B mobiles! <br/>
             <Link to="/users"> Users </Link>
             </Typography>
           </CardContent>
